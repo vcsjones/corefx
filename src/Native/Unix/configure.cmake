@@ -34,6 +34,7 @@ set(CMAKE_REQUIRED_FLAGS "-Werror -Wno-error=unused-value")
 
 check_c_compiler_flag(-Wno-alloca HAVE_WNO_ALLOCA)
 check_c_compiler_flag(-Wno-implicit-int-float-conversion HAVE_WNO_IMPLICIT_INT_FLOAT_CONVERSION)
+check_c_compiler_flag(-Wno-poison-system-directories HAVE_WNO_POISON_SYSTEM_DIRECTORIES)
 
 # in_pktinfo: Find whether this struct exists
 check_include_files(
